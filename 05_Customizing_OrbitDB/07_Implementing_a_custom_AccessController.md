@@ -80,4 +80,9 @@ This is the most primitive AC, it
 only has a single creator, who is the
 only identity, that can make changes to the DB.
 
-## Writing the AC Code
+## Creating the AC
+When creating a db, you pass in a object as
+options, that contains a `accessController` key.
+The object at this key is passed as `options`
+to the `NotesAccessController.create` function
+as the second argument after the `orbitdb` instance.
